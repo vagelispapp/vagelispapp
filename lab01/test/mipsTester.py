@@ -291,7 +291,8 @@ def runTests(prog, tests, \
       c += ' -e "%s"' %(i)
     c += ' ' + prog
     # Run sed to modify input
-    os.system(c)
+    if input_changes:
+      os.system(c)
     # RunMars
     (s, ic, m) = runMars(prog, expect_regs, expect_mem, marsJar, verbose)
     if s == 0:
