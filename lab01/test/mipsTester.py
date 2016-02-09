@@ -294,7 +294,7 @@ def runTests(prog, tests, \
     if input_changes:
       os.system(c)
     # RunMars
-    (s, ic, m) = runMars(prog, expect_regs, expect_mem, marsJar, verbose)
+    (s, ic, m) = runMars(prog, expect_regs, expect_mem, marsJar, True)
     if s == 0:
       out += "\n------------------------------\nPASSED %s" % (test_name)
       out += "\nExecuted %d instructions\n" %(ic)
