@@ -13,7 +13,7 @@ else:
   ##########################################
   marsJar = "/home/efthym/t/ca_course/MarsMYY402_4_5.jar"
 
-matric = 1000
+matric = 2924
 tests = [ \
  ("Matric simple test",\
   ["s/^matric:.*$/matric: .word %d/" %(matric) ],\
