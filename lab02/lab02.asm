@@ -32,8 +32,8 @@ loop:
 	bne	 $t6, $zero, negative		# if $t6!=0 goto negative
 	j	 positive			# else goto positive
 negative:
-	andi 	 $t7, $s3, 1			# if $t7=0 $s3 is equal
-	beq	 $t7, $zero, even		# goto equal	
+	andi 	 $t7, $s3, 1			# if $t7=0 $s3 is even
+	beq	 $t7, $zero, even		# goto even	
 	j	 skip2				# if $t7!=0 goto skip2
 even:
 	add 	 $s1, $s1, $s3			# counts negative even elements
